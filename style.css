@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background: linear-gradient(120deg, #1db954, #191414);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header button {
+    padding: 8px 16px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover {
+    opacity: 0.9;
+}
+
+/* MAIN SECTION */
+.main {
+    text-align: center;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* POPUP BACKGROUND */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP BOX */
+.box {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.submit {
+    width: 100%;
+    padding: 10px;
+    background: #1db954;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 0.9;
+}
+
+/* LINKS */
+.link,
+.close {
+    margin-top: 10px;
+    color: #1db954;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .main h1 {
+        font-size: 30px;
+    }
+}

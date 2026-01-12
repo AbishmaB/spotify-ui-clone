@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="
+    background: 
+    linear-gradient(rgba(29,185,84,0.7), rgba(25,20,20,0.7)),
+    url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+">
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Spotify</h2>
+        <button onclick="openSignup()">Sign Up</button>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <section class="main">
+        <h1>Music for Everyone</h1>
+        <p>Millions of songs, anytime, anywhere.</p>
+        <p>Listen • Create playlists • Enjoy podcasts</p>
+    </section>
+
+    <!-- SIGNUP POPUP -->
+    <div id="signup" class="popup">
+        <div class="box">
+            <h2>Create Account</h2>
+
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <button class="submit">Sign Up</button>
+
+            <p class="link" onclick="openLogin()">Already have an account? Login</p>
+            <p class="close" onclick="closeSignup()">Close</p>
+        </div>
+    </div>
+
+    <!-- LOGIN POPUP -->
+    <div id="login" class="popup">
+        <div class="box">
+            <h2>Login</h2>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <button class="submit">Login</button>
+
+            <p class="link" onclick="openSignup()">Create new account</p>
+            <p class="close" onclick="closeLogin()">Close</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
